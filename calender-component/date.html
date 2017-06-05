@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>日历组件</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="calender.css" />
+	<style type="text/css">
+		#date {
+			position: relative;
+			top: 100px;
+			left: 300px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" placeholder="选择日期" id="date">
+	
+	<script type="text/javascript" src="calender.js"></script>
+	<script type="text/javascript">
+
+		new Calender({
+			dom: document.querySelector('#date'), //必须参数，需要加载的input
+			date: [2014, 3, 12]	//选填，默认选中的日期
+		});
+	</script>
+</body>
+</html>
